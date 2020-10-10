@@ -1,0 +1,70 @@
+
+<link rel="stylesheet" href="./Table.css">
+<button class="open" id="close" onclick="closetable()">Slm</button>
+<div class="tableC">
+    <div class="table" id="table">
+        <button class="close"  onclick='closetable()'>X</button>
+        <div class="T-Header">
+            <div>slm</div>
+        </div>
+        <div class="row head">
+            <div id="home" class="home" title="home">Home</div>
+            <div id="avrage" class="avvrage">avrage</div>
+            <div id="sum" class="sum">sum</div>
+            <div id="cost" class="cost">cost</div>
+            <div id="unit" class="unit">unit</div>
+        </div>
+        <div class="row">
+            <div class="electrisity" id="" style="background-image: url(./icon/gas.png);"> </div>
+            <div class="" id="">0.0990</div>
+            <div class="" id="">0.0990</div>
+            <div class="" id="">0.0990</div>
+            <d
+            iv class="" id="">0.0990</div>
+        </div>
+        <div class="row">
+            <div class="gas" id="" style="background-image: url(./icon/gas.png);"></div>
+            <div class="" id="">0.0990</div>
+            <div class="" id="">0.0990</div>
+            <div class="" id="">0.0990</div>
+            <div class="" id="">0.0990</div>
+        </div>
+        <div class="row">
+            <div class="co2" id="" style="background-image: url(./icon/gas.png);"></div>
+            <div class="" id="">0.0990</div>
+            <div class="" id="">0.0990</div>
+            <div class="" id="">0.0990</div>
+            <div class="" id="">0.0990</div>
+        </div>
+        <div class="row">
+            <div class="tempreture" id="" style="background-image: url(./icon/gas.png);"></div>
+            <div class="" id="">0.0990</div>
+            <div class="" id="">0.0990</div>
+            <div class="" id="">0.0990</div>
+            <div class="" id="">0.0990</div>
+        </div>
+        </div>
+        
+    </div>
+</div>
+<script>
+    let closex =document.getElementById('close');
+    let table =document.getElementById('table');
+    function closetable(){
+        console.log('slm');
+        if (table.className.includes('closedT')) {
+            table.className=table.className.slice(0,table.className.lastIndexOf(' closedT'));
+            closex.style.zIndex='0';
+            closex.style.opacity=0;
+        }
+        else{
+            table.className+=' closedT';
+            closex.style.zIndex='10';
+            closex.style.opacity=1;
+            // setTimeout(function(params) {
+            //     table.className+=' Dnone';
+            // },200)
+        }
+    }
+    
+</script>

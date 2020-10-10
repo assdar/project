@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+:root{
+    --lightBlue:#9bd4df;
+    --darkBlue:#224958;
+    --mediomBlue:#438497;
+    --Exit:#b93030;
+    --blue:#225bed;
+    --mediomGray:#333c4e;
+    --darkGray:#242c3d;
+}
+.row:nth-child(even){
+    background-color: /* rgb(98, 138, 138) */ var(--lightBlue);
+}
+
+
+/* .row:nth-child(odd){
+    background-color: red;
+} */
+.tableC{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #000000;
+}
+.table{
+    height: 244px;
+    width: 460px;
+    text-align: center;
+    display: block;
+    text-align: center;
+    padding: 5px 0 0 0;
+    background-color: /* rgb(54, 75, 95) */ var(--mediomBlue);
+    /* position: relative; */
+    border-radius: 5px;
+    transform: scale(1);
+    transition: all 200ms;
+    box-shadow: 5px 5px 10px var(--mediomGray);
+}
+.row{
+    display: flex;
+}
+.row div{
+    width: 100px;
+    padding: 10px 20px;
+    display: inline-block;
+}
+.T-Header{
+    padding: 10px;
+}
+.closedT{
+    /* height: 0px;
+    width: 0px;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    display: none;
+    transition:,opacity 200ms; */
+    transform-origin: 445px 15px ;
+    transform: scale(0);
+    transition: transform 200ms;
+}
+.close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+    background-color: /* rgb(165, 75, 68) */ var(--Exit);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 1;
+    font-weight: bolder;
+}
+.open{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    background-color: /* rgb(165, 75, 68) */ var(--lightBlue);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 1;
+    color: var(--darkBlue);
+}
+.head{
+    color: rgb(230, 244, 255);
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.row div:first-child{
+    /* background-color: royalblue; */
+    width: 50px;
+    margin-left: 10px;
+    padding: 10px 0;
+    /* background-image: url(./icon/gas.png); */
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+.row div:last-child{
+    border-right: none;
+}
+div.row:nth-child(7) {
+    border-bottom: none;
+}
+.Dnone{
+    display: none;
+}
